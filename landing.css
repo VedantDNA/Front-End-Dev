@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    background-color: white;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+    width: 100%;
+    height: 98vh;
+    border-radius: 0 0 700px 0;
+    background: url(assets/4470723_2330463.jpg) no-repeat center;
+    background-size: cover;
+    box-shadow: 4px 5px 20px rgba(0, 0, 0, 0.32);
+    z-index: 1;
+    overflow: hidden;
+}
+.wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(50deg, rgba(0, 0, 0, 0.077) 80%, rgba(0, 0, 0, 0.43) 100%);
+    z-index: -1;
+}
+.navigation{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    transition: all 0.5s ease;
+    z-index: 999;
+}
+.navigation a{
+    color: white;
+}
+.scrolled{
+    color: white;
+    background: linear-gradient(220deg,rgb(252, 187, 23),coral,#268efc,#5a74f8);
+    background-color: #798FF7;
+    box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.459);
+}
+.logo a{
+    font-family: 'Bebas Neue', sans-serif;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: normal;
+    height: 40px;
+    padding-top: 5px;
+}
+.gateways{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+.gateways li{
+    transition: all 0.4s ease;
+}
+.gateways li a{
+    font-family: "Raleway";
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+.gateways li:hover{
+    scale: 1.1;
+}
+.gateways li a:hover{
+    background-color: white;
+    color: #007BFF;
+    box-shadow: 1 2px 10px rgba(0, 0, 0, 0.419);
+}
+.main-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 10px;
+    grid-column: 1/13;
+    grid-row: 8/13;
+    padding: 20px;
+    background-color: #00000054;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: -5px -3px 10px rgba(0, 0, 0, 0.284);
+    overflow: hidden;
+}
+.main-section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(125deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.289) 100%);
+}
+.main-section h1{
+    font-family: "Rowdies";
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: rgb(255, 217, 0);
+    text-align: left;
+}
+.main-section span{
+    width: 100%;
+    font-family: "Raleway";
+    font-size: 2rem;
+    font-weight: 700;
+    margin-left: 40px;
+    color: #ffffff;
+    text-align: left;
+}
+.arrow-container {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    transform: translate(-50%,-10%);
+    z-index: 99;
+}
+.arrow {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    animation: bounce 1.5s infinite;
+    transform: rotate(90deg); /* Rotates the arrow to point down */
+}
+.about-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 90vh;
+    margin-top: 30px;
+    padding: 20px;
+}
+.about-us h1{
+    font-family: "Raleway";
+    font-size: 3rem;
+    font-weight: 700;
+    color: #798FF7;
+    margin-top: 50px;
+}
+.about-us p{
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    text-align: center;
+    color: black;
+}
+.card-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 30px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 310px;
+    height: 390px;
+    padding: 20px;
+    border: solid 1px rgba(128, 128, 128, 0.67);
+    border-radius: 10px;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.432);
+    transition: all 0.5s ease;
+}
+.card:hover{
+    scale: 1.05;
+    background-color: #798FF7;
+    box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.532);
+}
+.card:hover h1{
+    color: rgb(255, 242, 0);
+}
+.card:hover p{
+    color: white;
+}
+.card:hover .card-img svg{
+    fill: white;
+}
+.card-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    fill: red;
+}
+.card-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.card-details h1{
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-top: 0px;
+}
+.card-details p{
+    font-family: "Raleway";
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+}
+.sign-up-section{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 30px;
+    border-radius: 700px 0 700px 0;
+    background: linear-gradient(20deg,rgb(252, 187, 23),coral,#268efc,#5a74f8);
+}
+.sign-up-container{
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    width: 900px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 2px 15px 30px rgba(0, 0, 0, 0.248);
+    overflow: hidden;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 50%;
+    gap: 50px;
+    height: 100%;
+    background: url(assets/vivid-blurred-colorful-wallpaper-background.jpg) no-repeat center;
+    background-size: cover;
+}
+.intro .message{
+    width: 100%;
+    font-family: "Montserrat";
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    z-index: 99;
+}
+.sign-up{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex: 1 1 50%;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    backdrop-filter: blur(10px);
+}
+.sign-up h2{
+    font-family: "Raleway";
+    font-size: 2rem;
+    color: #798FF7;
+}
+.sign-up form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+.sign-up form input{
+    border: none;
+    padding: 10px 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    width: 70%;
+    height: 40px;
+    border: solid 2px #007bff7e;
+    border-radius: 15px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.108);
+    outline: none;
+}
+#agree{
+    width: 15px;
+    height: 15px;
+}
+.sign-up form input:focus{
+    border: solid 2px rgb(0, 210, 0);
+}
+.sign-up form input::placeholder{
+    font-size: 1rem;
+}
+.sign-up form label,.sign-up form p{
+    font-family: "Montserrat";
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.sign-up form a{
+    font-family: "Montserrat";
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #007BFF;
+}
+.sign-up form button{
+    width: 60%;
+    font-family: "Montserrat";
+    font-size: 1rem;
+    color: white;
+    padding: 10px 10px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.39);
+    transition: all 0.5s ease;
+}
+.sign-up form button:hover{
+    scale: 1.05;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.494);
+}
+.sign-up form button:active{
+    scale: 0.9;
+}
+
+
+
+
+
+
+/* Bouncing Animation */
+@keyframes bounce {
+    0%, 20%, 80%, 100% {
+        transform: translateY(10px);
+    }
+    40% {
+        transform: translateY(20px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    60% {
+        transform: translateY(20px);
+    }
+}
+@keyframes visit{
+
+}
+

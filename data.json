@@ -1,0 +1,349 @@
+{
+    "recommendedCourseCatalogue" : [
+        {
+            "courseID" : 13,
+            "courseName" : "Display : Grid - Introduction",
+            "courseIMG" : "assets/course1img.jpg"
+        },
+        {
+            "courseID" : 14,
+            "courseName" : "Display : Flex - Introduction",
+            "courseIMG" : "assets/course2.jpg"
+        },
+        {
+            "courseID" : 15,
+            "courseName" : "CSS Styling",
+            "courseIMG" : "assets/2149378320.jpg"
+        },
+        {
+            "courseID" : 16,
+            "courseName" : "Front-End Development",
+            "courseIMG" : "assets/pexels-picjumbo-com-55570-196645.jpg"
+        }
+    ],
+
+    "mentors" : [
+        {
+            "id":1,
+            "profile": "assets/emojisky.com-53405.png",
+            "name": "Elon Musk",
+            "rating": 4,
+            "country": "USA",
+            "category": "UI/UX"
+        },
+        {
+            "id":2,
+            "profile": "assets/emojisky.com-241987.png",
+            "name": "Urfi Javed",
+            "rating": 5,
+            "country": "INDIA",
+            "category": "Backend Dev"
+        },
+        {
+            "id":3,
+            "profile": "assets/emojisky.com-22578280.png",
+            "name": "Steve Jobs",
+            "rating": 3,
+            "country": "ITALY",
+            "category": "Javascript"
+        },
+        {
+            "id":4,
+            "profile": "assets/emojisky.com-89987.png",
+            "name": "Orry Bhang",
+            "rating": 1,
+            "country": "NIGERIA",
+            "category": "Product Owner"
+        }
+    ],
+
+    "videoCatalogue" : [
+        {
+            "id": 1,
+            "title": "Introduction to HTML",
+            "description": "Learn the basics of HTML and web structure.",
+            "link": "assets/The EASIEST way to get started with CSS GRID.mp4",
+            "image": "assets/2149378320.jpg",
+            "button": "Enroll Now"
+          },
+          {
+            "id": 2,
+            "title": "CSS for Beginners",
+            "description": "Master the styling of web pages with CSS.",
+            "link": "assets/The EASIEST way to get started with CSS GRID.mp4",
+            "image": "assets/course1img.jpg",
+            "button": "Enroll Now"
+          },
+          {
+            "id": 3,
+            "title": "JavaScript Essentials",
+            "description": "Understand JavaScript and how to use it to make web pages interactive.",
+            "link": "assets/The EASIEST way to get started with CSS GRID.mp4",
+            "image": "assets/course2.jpg",
+            "button": "Enroll Now"
+          },
+          {
+            "id": 4,
+            "title": "Responsive Web Design",
+            "description": "Learn how to build websites that work on any device.",
+            "link": "assets/The EASIEST way to get started with CSS GRID.mp4",
+            "image": "assets/vivid-blurred-colorful-wallpaper-background.jpg",
+            "button": "Enroll Now"
+          },
+          {
+            "id": 5,
+            "title": "Python Programming",
+            "description": "Get started with Python programming language.",
+            "link": "assets/The EASIEST way to get started with CSS GRID.mp4",
+            "image": "assets/2149378320.jpg",
+            "button": "Enroll Now"
+          },
+          {
+            "id": 6,
+            "title": "Data Structures and Algorithms",
+            "description": "Understand the fundamentals of data structures and algorithms.",
+            "link": "assets/The EASIEST way to get started with CSS GRID.mp4",
+            "image": "assets/course2.jpg",
+            "button": "Enroll Now"
+          },
+          {
+            "id": 7,
+            "title": "Node.js for Backend Development",
+            "description": "Learn how to build scalable backend applications with Node.js.",
+            "link": "assets/The EASIEST way to get started with CSS GRID.mp4",
+            "image": "assets/course1img.jpg",
+            "button": "Enroll Now"
+          },
+          {
+            "id": 8,
+            "title": "React for Frontend Development",
+            "description": "Build interactive web applications using React.js.",
+            "image": "assets/course2.jpg",
+            "button": "Enroll Now"
+          },
+          {
+            "id": 9,
+            "title": "Introduction to Databases",
+            "description": "Learn the fundamentals of databases and SQL.",
+            "link": "assets/The EASIEST way to get started with CSS GRID.mp4",
+            "image": "assets/vivid-blurred-colorful-wallpaper-background.jpg",
+            "button": "Enroll Now"
+          },
+          {
+            "id": 10,
+            "title": "Machine Learning Basics",
+            "description": "Get an introduction to machine learning concepts and tools.",
+            "link": "assets/The EASIEST way to get started with CSS GRID.mp4",
+            "image": "assets/2149378320.jpg",
+            "button": "Enroll Now"
+          },
+          {
+            "id": 11,
+            "title": "CSS Animations and Transitions",
+            "description": "Master CSS animations and transitions to create engaging and interactive user experiences on the web.",
+            "link": "assets/The EASIEST way to get started with CSS GRID.mp4",
+            "image": "assets/course2.jpg",
+            "button": "Enroll Now"
+        },
+        {
+            "id": 12,
+            "title": "Vue.js Essentials",
+            "description": "Learn the basics of Vue.js and how to create dynamic web applications with this lightweight and flexible JavaScript framework.",
+            "link": "assets/The EASIEST way to get started with CSS GRID.mp4",
+            "image": "assets/course1img.jpg",
+            "button": "Enroll Now"
+        },
+        {
+            "id": 13,
+            "title": "THE EASIEST way to get started with CSS GRID!!",
+            "link": "assets/The EASIEST way to get started with CSS GRID.mp4",
+            "description": "CSS flexbox introduction tutorial example explained",
+            "image": "assets/course2.jpg",
+            "like": false,
+            "mentor": "John Doe"
+        },
+        {
+            "id": 14,
+            "title": "Display: Flex - Introduction",
+            "link": "assets/The EASIEST way to get started with CSS GRID.mp4",
+            "description": "CSS flexbox introduction tutorial example explained",
+            "image": "assets/vivid-blurred-colorful-wallpaper-background.jpg",
+            "like": false,
+            "mentor": "John Doe"
+        },
+        {
+            "id": 15,
+            "title": "CSS Styling",
+            "link": "assets/The EASIEST way to get started with CSS GRID.mp4",
+            "description": "CSS flexbox introduction tutorial example explained",
+            "image": "assets/course1img.jpg",
+            "like": false,
+            "mentor": "John Doe"
+        },
+        {
+            "id": 16,
+            "title": "Front-End Development",
+            "link": "assets/The EASIEST way to get started with CSS GRID.mp4",
+            "description": "CSS flexbox introduction tutorial example explained",
+            "image": "assets/2149378320.jpg",
+            "like": false,
+            "mentor": "John Doe"
+        },
+        {
+          "id": 17,
+          "title": "Display: Grid",
+          "link": "assets/The EASIEST way to get started with CSS GRID.mp4",
+          "description": "CSS Display: grid explained. Learn how to build websites that work on any device.",
+          "image": "assets/course2.jpg",
+          "like": false,
+          "mentor": "John Doe"
+      },
+      {
+        "id": 18,
+        "title": "Front-End Design",
+        "link": "assets/The EASIEST way to get started with CSS GRID.mp4",
+        "description": "Learn Front-End Design Concepts",
+        "image": "assets/course1img.jpg",
+        "like": false,
+        "mentor": "John Doe"
+    },
+    {
+      "id": 19,
+      "title": "Advanced CSS",
+      "link": "assets/The EASIEST way to get started with CSS GRID.mp4", 
+      "description": "Dive deeper into CSS with advanced techniques and best practices.",
+      "image": "assets/pexels-picjumbo-com-55570-196645.jpg",
+      "like": false,
+      "mentor": "Jane Smith"
+    },
+    {
+      "id": 20,
+      "title": "JavaScript Essentials",
+      "link": "assets/The EASIEST way to get started with CSS GRID.mp4", 
+      "description": "Learn the fundamentals of JavaScript to enhance your web development skills.",
+      "image": "assets/2149378320.jpg",
+      "like": false,
+      "mentor": "John Doe"
+    },
+    {
+      "id": 21,
+      "title": "React Basics",
+      "link": "assets/The EASIEST way to get started with CSS GRID.mp4",
+      "description": "An introductory course on React, a powerful library for building user interfaces.",
+      "image": "assets/course2.jpg",
+      "like": false,
+      "mentor": "Alice Johnson"
+    }
+    ],
+
+    "courseList" : [
+        {
+          "id": 1,
+          "title": "Introduction to HTML",
+          "description": "Learn the basics of HTML and web structure.",
+          "image": "assets/2149378320.jpg",
+          "button": "Enroll Now"
+        },
+        {
+          "id": 2,
+          "title": "CSS for Beginners",
+          "description": "Master the styling of web pages with CSS.",
+          "image": "assets/course1img.jpg",
+          "button": "Enroll Now"
+        },
+        {
+          "id": 3,
+          "title": "JavaScript Essentials",
+          "description": "Understand JavaScript and how to use it to make web pages interactive.",
+          "image": "assets/course2.jpg",
+          "button": "Enroll Now"
+        },
+        {
+          "id": 4,
+          "title": "Responsive Web Design",
+          "description": "Learn how to build websites that work on any device.",
+          "image": "assets/vivid-blurred-colorful-wallpaper-background.jpg",
+          "button": "Enroll Now"
+        },
+        {
+          "id": 5,
+          "title": "Python Programming",
+          "description": "Get started with Python programming language.",
+          "image": "assets/2149378320.jpg",
+          "button": "Enroll Now"
+        },
+        {
+          "id": 6,
+          "title": "Data Structures and Algorithms",
+          "description": "Understand the fundamentals of data structures and algorithms.",
+          "image": "assets/course2.jpg",
+          "button": "Enroll Now"
+        },
+        {
+          "id": 7,
+          "title": "Node.js for Backend Development",
+          "description": "Learn how to build scalable backend applications with Node.js.",
+          "image": "assets/course1img.jpg",
+          "button": "Enroll Now"
+        },
+        {
+          "id": 8,
+          "title": "React for Frontend Development",
+          "description": "Build interactive web applications using React.js.",
+          "image": "assets/course2.jpg",
+          "button": "Enroll Now"
+        },
+        {
+          "id": 9,
+          "title": "Introduction to Databases",
+          "description": "Learn the fundamentals of databases and SQL.",
+          "image": "assets/vivid-blurred-colorful-wallpaper-background.jpg",
+          "button": "Enroll Now"
+        },
+        {
+          "id": 10,
+          "title": "Machine Learning Basics",
+          "description": "Get an introduction to machine learning concepts and tools.",
+          "image": "assets/2149378320.jpg",
+          "button": "Enroll Now"
+        },
+        {
+          "id": 11,
+          "title": "CSS Animations and Transitions",
+          "description": "Master CSS animations and transitions to create engaging and interactive user experiences on the web.",
+          "image": "assets/course2.jpg",
+          "button": "Enroll Now"
+      },
+      {
+          "id": 12,
+          "title": "Vue.js Essentials",
+          "description": "Learn the basics of Vue.js and how to create dynamic web applications with this lightweight and flexible JavaScript framework.",
+          "image": "assets/course1img.jpg",
+          "button": "Enroll Now"
+      }
+      
+    ],
+
+    "continueWatching": [
+    {
+      "title": "Display: Grid",
+      "image": "assets/course2.jpg"
+    },
+    {
+      "title": "Front-End Design",
+      "image": "assets/course1img.jpg"
+    },
+    {
+      "title": "Advanced CSS",
+      "image": "assets/pexels-picjumbo-com-55570-196645.jpg"
+    },
+    {
+      "title": "JavaScript Essentials",
+      "image": "assets/2149378320.jpg"
+    },
+    {
+      "title": "React Basics",
+      "image": "assets/course2.jpg"
+    }
+  ]
+}

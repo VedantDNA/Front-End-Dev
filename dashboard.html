@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="new_cal.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <title>Skill-Quest | Dashboard</title>
+</head>
+<body>
+    <main class="container">
+        <aside class="side-section">
+            <div class="logo">
+                <img src="assets/rebase_24dp_E8EAED_FILL0_wght500_GRAD0_opsz24.svg" alt="Logo">
+                <a href="#">SKILL-QUEST</a>
+            </div>
+            <div class="gateways">
+                <span class="gateway-title">OVERVIEW</span>
+                <a href="#" class="gateway-options" id="gateway_dashboard">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#007BFF"><path d="M202.87-111.87q-37.78 0-64.39-26.61t-26.61-64.39v-554.26q0-37.78 26.61-64.39t64.39-26.61h554.26q37.78 0 64.39 26.61t26.61 64.39v554.26q0 37.78-26.61 64.39t-64.39 26.61H202.87Zm0-91H440v-554.26H202.87v554.26Zm317.13 0h237.13V-480H520v277.13ZM520-560h237.13v-197.13H520V-560Z"/></svg>Dashboard</a>
+                <a href="#" class="gateway-options" id="gateway_inbox">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#007BFF"><path d="M202.87-111.87q-37.78 0-64.39-26.61t-26.61-64.39v-554.26q0-37.78 26.61-64.39t64.39-26.61h554.26q37.78 0 64.39 26.61t26.61 64.39v554.26q0 37.78-26.61 64.39t-64.39 26.61H202.87Zm0-91h554.26v-118.56H640q-30 38-71.5 59t-88.5 21q-47 0-88.5-21t-71.5-59H202.87v118.56ZM480-321.43q38 0 69-22t43-58h165.13v-355.7H202.87v355.7H368q12 36 43 58t69 22ZM202.87-202.87h554.26-554.26Z"/></svg>Inbox</a>
+                <a href="mycourses.html" class="gateway-options" id="gateway_lessons"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#007BFF"><path d="M451.28-162.87q6.48 22.87 19.01 47.72 12.54 24.85 26.64 43.28H202.87q-37.78 0-64.39-26.61t-26.61-64.39v-634.26q0-37.78 26.61-64.39t64.39-26.61h474.26q37.78 0 64.39 26.61t26.61 64.39v282.56q-20.15-3.43-45.26-3.91T677.13-516v-281.13H480V-520l-100-60-100 60v-277.13h-77.13v634.26h248.41ZM720-40q-83 0-141.5-58.5T520-240q0-83 58.5-141.5T720-440q83 0 141.5 58.5T920-240q0 83-58.5 141.5T720-40Zm-50-100 160-100-160-100v200ZM280-797.13h200-200Zm171.28 0H202.87h474.26H440 451.28Z"/></svg>My Courses</a>
+                <a href="#" class="gateway-options" id="gateway_task"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#007BFF"><path d="M279.52-162.87v-427.37q0-37.69 26.99-63.97 26.99-26.27 64.77-26.27h425.85q37.78 0 64.39 26.61t26.61 64.39v314.98L685.5-71.87H370.52q-37.78 0-64.39-26.61t-26.61-64.39ZM73.11-707.61q-6.72-37.54 14.79-67.87 21.51-30.32 59.06-37.04l420.6-74.37q37.55-6.72 67.87 14.79 30.33 21.51 37.05 59.06l9.52 52.56h-90.37l-7-39.52L160-724.67l39.52 223.6v281.4q-19.82-9.48-34.07-26.99-14.25-17.51-17.97-40.34L73.11-707.61Zm295.02 115.74v431.39h274.02v-157.37h157.37v-274.02H368.13Zm215.7 215.7Z"/></svg>Task</a>
+                <a href="#" class="gateway-options" id="gateway_groups"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#007BFF"><path d="M-3.83-236.17V-303q0-44.91 45.2-72.87 45.2-27.96 118.63-27.96 11.09 0 21.05.38 9.97.38 19.54 1.91-14.72 21.95-21.96 46.11-7.24 24.17-7.24 50.43v68.83H-3.83Zm240 0V-305q0-32.72 17.62-60.05 17.62-27.34 50.34-47.82t77.82-30.72q45.09-10.24 98.04-10.24 53.97 0 98.94 10.24 44.98 10.24 77.7 30.72 32.72 20.48 49.96 47.82 17.24 27.33 17.24 60.05v68.83H236.17Zm552.44 0V-305q0-27.28-6.86-51.42t-20.58-45.12q9.57-1.53 19.18-1.91 9.62-.38 19.65-.38 73.72 0 118.77 27.55 45.06 27.54 45.06 73.28v66.83H788.61Zm-456.68-86.46h297.14q-12.64-18.33-55.62-31.65-42.99-13.33-93.33-13.33-50.34 0-93.45 13.33-43.1 13.32-54.74 31.65ZM160.02-442.87q-33.98 0-58.19-24.19-24.22-24.19-24.22-58.16 0-35 24.19-58.71 24.19-23.72 58.16-23.72 35 0 58.71 23.68 23.72 23.68 23.72 58.69 0 33.98-23.68 58.19-23.68 24.22-58.69 24.22Zm640 0q-33.98 0-58.19-24.19-24.22-24.19-24.22-58.16 0-35 24.19-58.71 24.19-23.72 58.16-23.72 35 0 58.71 23.68 23.72 23.68 23.72 58.69 0 33.98-23.68 58.19-23.68 24.22-58.69 24.22ZM480-483.59q-51.59 0-87.71-36.11-36.12-36.12-36.12-87.71 0-52.44 36.12-88.13 36.12-35.7 87.71-35.7 52.43 0 88.13 35.7 35.7 35.69 35.7 88.13 0 51.59-35.7 87.71-35.7 36.11-88.13 36.11Zm.12-86.21q15.92 0 26.71-10.91 10.78-10.9 10.78-26.82 0-15.93-10.81-26.71-10.82-10.78-26.8-10.78-15.8 0-26.71 10.81-10.9 10.81-10.9 26.8 0 15.8 10.9 26.7 10.91 10.91 26.83 10.91Zm.88 247.17Zm-1-284.78Z"/></svg>Groups</a>
+            </div>
+            <div class="friends">
+                <span class="friends-title">FRIENDS</span>
+                <div class="friends-image">
+                    <span class="image-background"><img src="assets/emojisky.com-53405.png" width="25px"></span>
+                    <a href ="#" class="friends-name">Elon Jobs
+                        <span class="friends-role">Software Developer</span>
+                    </a>
+                </div>
+                <div class="friends-image">
+                    <span class="image-background"><img src="assets/emojisky.com-241987.png" width="25px"></span>
+                    <a href="#" class="friends-name">Urfi Javed
+                        <span class="friends-role">UI/UX</span>
+                    </a>
+                </div>
+                <div class="friends-image">
+                    <span class="image-background"><img src="assets/emojisky.com-89987.png" width="25px"></span>
+                    <a href="#" class="friends-name">Orry
+                        <span class="friends-role">Product Owner</span>
+                    </a>
+                </div>
+            </div>
+            <div class="settings">
+                <span class="settings-title">SETTINGS</span>
+                <a href="#" class="settings-logo settings1"><img src="assets/settings_24dp_434343_FILL0_wght500_GRAD0_opsz24.svg" alt="settings">Settings</a>
+                <a id="logout-btn" class="settings-logo settings2"><img src="assets/logout_24dp_434343_FILL0_wght500_GRAD0_opsz24.svg" alt="logout">Log-Out</a>
+            </div>
+        </aside>
+        <div class="main">
+            <div class="search">
+                <img src="assets/search_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt="search">
+                <input type="search" id="search-input" placeholder="Search your course...">
+                <ul class="results" id="results-list">
+                    <li>No Results...</li>
+                </ul>
+            </div>
+            <div class="alerts">
+                <img src="assets/mail_24dp_434343_FILL0_wght500_GRAD0_opsz24.svg" alt="messages">
+                <img src="assets/notifications_active_24dp_434343_FILL0_wght500_GRAD0_opsz24.svg" alt="notification">
+            </div>
+            <div class="spacer"></div>
+            <div class="profile">
+                <span class="profile-background">
+                    <img src="assets/emojisky.com-22578280.png" alt="profile_image" width="25px">
+                </span>
+                <a href ="#" class="profile-name">YourNewProfileName
+                    <span class="profile-role">Frontend Dev</span>
+                </a>
+            </div>
+            <div class="nav_buttons">
+                <button class="prev_button"><img src="assets/arrow_back_ios_24dp_000000_FILL0_wght500_GRAD0_opsz24.svg" alt="prev"></button>
+                <button class="next_button"><img src="assets/arrow_forward_ios_24dp_000000_FILL0_wght500_GRAD0_opsz24.svg" alt="next"></button>
+            </div>
+            <div class="banner-container slider">
+                <div class="slider__track-container">
+                    <ul class="slider_track"></ul>
+                </div>
+            </div>
+            <div class="hist-btn">
+                <button class="prev_button hist-btn-prev"><img src="assets/arrow_back_ios_24dp_000000_FILL0_wght500_GRAD0_opsz24.svg" alt="prev"></button>
+                <button class="next_button hist-btn-next"><img src="assets/arrow_forward_ios_24dp_000000_FILL0_wght500_GRAD0_opsz24.svg" alt="next"></button>
+            </div>
+            <div class="video_history">
+                <h2 class="heading">Continue Watching</h2>
+                <ul class="hist-slider"></ul>
+            </div>
+            <div class="profile-analytics">
+                <div class="calendar">
+                    <button class="prev-cal-button"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M407.65-72.35 0-480l407.65-407.65L486.3-809l-329 329 329 329-78.65 78.65Z"/></svg></button>
+                    <button class="next-cal-button"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M321-72.35 242.35-151l329-329-329-329L321-887.65 728.65-480 321-72.35Z"/></svg></button>
+                </div>
+                <div class="user-section">
+                    <div class="user-profile">
+                        <img src="assets/emojisky.com-22578280.png">
+                    </div>
+                    <h2 id="welcome-message">Welcome Vedant</h2>
+                    <p>Continue Learning to achieve your target</p>
+                    <div class="mycourses">
+                        <div class="title">
+                            <h3>My Courses</h3>
+                            <a href="courses.html">All Courses</a>
+                        </div>
+                        <div class="course-list"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="mentor-container">
+                <h3>Mentors</h3>
+                <div class="mentor"></div>
+            </div>          
+        </div>        
+    </main>    
+</body>
+</html>

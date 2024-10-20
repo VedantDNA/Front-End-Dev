@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="videostyle.css">
+    <script defer src="videoscript.js"></script>
+</head>
+<body>
+    <main class="container">
+        <nav class="navbar">
+            <ul class="left">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="#">Order</a></li>
+            </ul>
+            <div class="logo">
+                <img src="assets/rebase_24dp_E8EAED_FILL0_wght500_GRAD0_opsz24.svg" alt="">
+                <a href="index.html">SKILL-QUEST</a>
+            </div>
+            <ul class="right">
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="videoPlayer-container">
+            <video id="videoPlayer" autoplay controls>
+                <source src="">
+            </video>
+            <div id="errorMessage" class="error-message" style="display: none;">
+                <h2>Video not available</h2>
+                <p>Sorry, the requested video could not be loaded. Please try again later.</p>
+            </div>
+            <div class="video-title">
+                <h1 class="videoTitle"></h1>
+                <span class="video-description"></span>
+            </div>
+        </section>
+        <aside class="videoList"></aside>
+    </main>
+</body>
+</html>
