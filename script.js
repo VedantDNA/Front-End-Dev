@@ -35,7 +35,6 @@ if (loggedInEmail) {
     }
 } else {
     console.log("No user is logged in.");
-    // Set to default user if no user is logged in
     profileNameElement.childNodes[0].nodeValue = defaultUser.user; 
 }
 
@@ -168,10 +167,10 @@ async function loadData(){
 // Function to handle course search
 function searchCourses(searchTerm) {
     const resultsList = document.getElementById("results-list");
-    resultsList.innerHTML = ""; // Clear previous results
+    resultsList.innerHTML = ""; 
 
     if (searchTerm.length === 0) {
-        resultsList.style.display = "none"; // Hide results if search term is empty
+        resultsList.style.display = "none";
         return;
     }
 
@@ -180,22 +179,21 @@ function searchCourses(searchTerm) {
     );
 
     if (filteredCourses.length === 0) {
-        resultsList.style.display = "none"; // Hide results if no matches
+        resultsList.style.display = "none"; 
     } else {
-        resultsList.style.display = "block"; // Show results
+        resultsList.style.display = "block";
 
         filteredCourses.forEach(course => {
             const listItem = document.createElement("li");
             listItem.textContent = course.title;
             listItem.onclick = () => {
-                window.open(`Video.html?id=${course.id}`, "_self"); // Navigate to video page
+                window.open(`Video.html?id=${course.id}`, "_self"); 
             };
             resultsList.appendChild(listItem);
         });
     }
 }
 
-// Event listener for the search input
 document.getElementById("search-input").addEventListener("input", function() {
     const searchTerm = this.value.trim();
     searchCourses(searchTerm);
@@ -254,11 +252,9 @@ loadData().then(()=>{
     const slides = Array.from(track.children);
     const slideWidth = slides[0].getBoundingClientRect().width;
 
-    // function to position the slide:
     function setSlidePosition(slide,index){slide.style.left = `${slideWidth * index}px`;}
     slides.forEach(setSlidePosition);
 
-    // function to execute switching of slide items:
     function moveSlide(track,currentSlide,targetSlide ){
         if(!targetSlide)return;
         const amountToMove = targetSlide.style.left;
@@ -267,7 +263,6 @@ loadData().then(()=>{
         targetSlide.classList.add("current-slide");
     }
 
-    // function to auto cycle slides;
     function autoCycleSlide(){
         const currentSlide = track.querySelector(".current-slide");
         const nextSlide = currentSlide.nextElementSibling || slides[0];
