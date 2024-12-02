@@ -24,8 +24,8 @@ function displayVideo(videoCatalogue){
     
         if (videoDetails) {
             videoPlayer.innerHTML = `<source src="${videoDetails.link}" type="video/mp4">`;
-            videoTitle.textContent = videoDetails.title; // Set video title
-            videoDescription.textContent = videoDetails.description; // Set video description
+            videoTitle.textContent = videoDetails.title;
+            videoDescription.textContent = videoDetails.description; 
             errorMessage.style.display = 'none';
         } else {
             videoPlayer.style.display = 'none';  
@@ -44,7 +44,7 @@ function displayRelatedVideos(videoCatalogue) {
     const videoIndex = parseInt(videoID, 10);
 
     const relatedVideos = videoCatalogue.filter(video => video.id !== videoIndex); // Exclude current video
-    videoList.innerHTML = ''; // Clear existing list
+    videoList.innerHTML = ''; 
     
     relatedVideos.forEach(video => {
         const videoItem = document.createElement("div");
